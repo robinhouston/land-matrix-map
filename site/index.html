@@ -14,10 +14,12 @@
 		<script type="text/javascript" src="map.js"></script>
 	</head>
 	<body>
+		<h1>Land Matrix Map</h1>
+		<div id="introduction">
+			<p>This map shows the effect of the land deals in the <a href="http://landportal.info/landmatrix">Land Matrix</a> database. The “before” map simply shows the true land area of each country. The “after” map is an exaggerated rendition of the changes due to land deals, where a company based in one country buys a tract of land in another. For each land deal where the purchasing company is associated with a particular country, the size of the purchasing country is increased and the size of the country where the land was bought is reduced correspondingly. The true size of the affected land area is multiplied by 100 to make a visible difference on the map.</p>
+		</div>
 		<div id="controls">
-			<a href="#_raw">plain map</a>
-			<a href="#before">before</a>
-			<a href="#after">after</a>
+			<a id="control-_raw" href="#_raw">plain map</a><a id="control-before" href="#before">before</a><a id="control-after" href="#after">after</a>
 		</div>
 		<div id="maparea">
 			<div id="loading">

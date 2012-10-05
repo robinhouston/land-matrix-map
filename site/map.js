@@ -129,6 +129,10 @@ function mapDataHaveLoaded() {
         if (!(dataset in map_data)) return;
 
         var data = map_data[dataset];
+        
+        // Select the chosen 
+        $("#controls a").removeClass("selected");
+        $("#controls #control-" + dataset).addClass("selected");
 
         // Animate the map to the chosen configuration
         if (Modernizr.smil) {
