@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Land Matrix Map</title>
+		<link href='style.css' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="modernizr.js"></script>
+		<script type="text/javascript">
+			if (!Modernizr.hashchange || !Modernizr.svg || typeof document.getElementsByClassName === "undefined") {
+				window.location.href="fail.html";
+			}
+		</script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="map.js"></script>
+	</head>
+	<body>
+		<div id="controls">
+			<a href="#_raw">plain map</a>
+			<a href="#before">before</a>
+			<a href="#after">after</a>
+		</div>
+		<div id="maparea">
+			<div id="loading">
+				<img src="loading.gif" alt="Loading…">
+			</div>
+		</div>
+	</body>
+</html>
